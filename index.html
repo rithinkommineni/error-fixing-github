@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mr. Bookstore</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .book {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+        }
+        .book img {
+            width: 100px;
+            height: 150px;
+        }
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr. Bookstore</h1>
+        <button onclick="viewCart()">View Cart</button>
+    </header>
+    <div class="book">
+        <img src="book1.jpg" alt="Book 1">
+        <h2>Book 1</h2>
+        <p>Price: $10</p>
+        <p>Summary: This is a great book about...</p>
+        <button onclick="addToCart('Book 1', 10)">Add to cart</button>
+    </div>
+    <!-- ...existing HTML for other books... -->
+    <footer>
+        <p>Location: 123 Main St, Anytown, USA</p>
+        <p>Contact: 123-456-7890</p>
+    </footer>
+    <script>
+        // ...existing JavaScript for cart functionality...
+    </script>
+</body>
+</html>
